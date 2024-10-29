@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Money</title>
+</head>
+<body>
+    <header>
+        <h3>Important Notice:</h3>
+        <p>Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal infprmation
+            and financial details to anyone online or anywhere else
+        </p>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home </a> </li>
+                <li> <a href="sign_in.html">Sign In </a> </li>
+                <li> <a href="register.html">Sign Up </a> </li>
+                <li> <a href="transfer.html">Transfer </a> </li>
+                <li> <a href="transactions.html">Transaction History </a> </li>  
+                <li> <a href="contact_us.html">Contact Us</a> </li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section>
+        <h2>Transfer To Bank Account</h2>
+        <p>Local transfers to banks in Nigeria</p>
+        <form >
+            <label for="select_bank">Select Bank: </label>
+            <select name="select_bank" id="">
+                <option value="empty"></option>
+                <option value="opay">Opay</option>
+                <option value="palmpay">Palmpay</option>
+                <option value="kuda">Kuda</option>
+                <option value="gtbank">GTBank</option>
+                <option value="firstbank">First Bank</option>
+                <option value="zenith">Zenith Bank</option>
+                <option value="uba">United Bank of Africa</option>
+                <option value="wema">WEMA Bank</option>
+                <option value="access">Access Bank</option>
+                <option value="fcmb">FCMB</option>
+            </select> <br> <br>
+            <label for="account_number">Account Number: </label>
+            <input type="text" name="account_number" id=""> <br> <br>
+            <label for="account_name">Account Name: </label>
+            <input type="text" name="account_name" id=""> <br> <br>
+            <label for="amount">Enter Amount: </label>
+            <input type="number" name="amount" id=""> <br> <br>
+            <label for="remark">Transaction Remark: </label>
+            <input type="text" name="remark" id="" placeholder="Optional"> <br> <br>
+            <label for="pin">Enter PIN: </label>
+            <input type="password" name="pin" id=""> <br> <br>
+            <button type="submit">Send Money</button>
+
+        </form>
+       </section> 
+
+    </main>
+    <footer>
+        <p>&copy;2024 Binary Bank Ltd. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
