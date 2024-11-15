@@ -4,40 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h3>Important Notice:</h3>
-        <p>Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
-            and financial details to anyone online or anywhere else
-        </p>
-        <nav>
-            <ul>
+    <header class="navbar-msg">
+        <div class="nav-msg">
+            <p> <span>Important Notice:</span> <br>
+                Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
+                and financial details to anyone online or anywhere else
+            </p>
+        </div>
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html">BinaryBank </a> </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li> <a href="index.html">Home </a> </li>
                 <li> <a href="sign_in.html">Sign In </a> </li>
                 <li> <a href="register.html">Sign Up </a> </li>
                 <li> <a href="transfer.html">Transfer </a> </li>
-                <li> <a href="transactions.html">Transaction History </a> </li> 
-                <li> <a href="contact_us.html">Contact Us</a> </li>   
+                <li> <a href="transactions.html">Transaction History </a> </li>
+                <li> <a href="contact_us.html">Contact Us</a> </li>    
             </ul>
         </nav>
-    </header>
+    </header> <br>
     <main>
-        <section>
-            <h2>Login Here.</h2>
-            <p>Your <b>Email</b> and <b>Password</b> are confidential. Do not disclose them to anyone.</p>
-            <p>Protect your <b>PIN</b>. Do not disclose it to anyone</p>
-            <p>Always log on to our internet banking services via our website - <b>www.binarybank.com</b> </p>
-            <p>Ensure no one is looking over your shoulders as input your <b>credentials</b>. Make sure 
-                you observe your surroundings. </p> <br>
-            <form> 
-                <label for="email">Email: </label> 
-                <input type="email" name="email" id=""> <br> <br>
-                <label for="password">Password: </label>
-                <input type="password" name="password" id=""> <br> <br>
-                <button type="submit">Login</button> <br> <br>
-                <a href="">Forgot Password?</a>
-            </form>
+        <section class="login">
+            <h2>WELCOME BACK</h2>
+            <div class="login-msg">
+                <p>Your <span>Email</span> and <span>Password</span> are confidential. Do not disclose them to anyone.</p>
+                <p>Protect your <span>PIN</span>. Do not disclose it to anyone</p>
+                <p>Always log on to our internet banking services via our website - <span>www.binarybank.com</span> </p>
+                <p>Ensure no one is looking over your shoulders as input your <span>Credentials</span>. Make sure 
+                    you observe your surroundings. </p> <br>
+            </div>
+            <div class="form-card">
+                <h2>Login</h2>
+                <form class="login-form"> 
+                    <label for="email">Email</label> <br>
+                    <div class="username-layout">
+                        <span class="user-icon">
+                        <i class="fa-solid fa-user"></i>
+                        </span>
+                        <input type="email" name="email" placeholder="Enter your email" id="">
+                    </div> <br> 
+                    <label for="password">Password </label> <br>
+                    <div class="password-layout">
+                        <span class="password-icon">
+                        <i class="fa-solid fa-lock"></i>
+                        </span>
+                        <input type="password" name="password" placeholder="Enter your password" id=""> 
+                    </div> <br> 
+                    <a href="" id="forgot-password" >Forgot Password?</a>
+                    <button type="submit" class="submit-btn">LOGIN</button> <br> 
+                                        <p>Not a member?<a href="register.html">Sign up</a> </p>
+                </form>
+            </div>
         </section>
 
     </main>

@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Binary Bank</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h3>Important Notice:</h3>
-        <p>Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
-            and financial details to anyone online or anywhere else
-        </p>
-        <nav>
-            <ul>
+    <header class="navbar-msg">
+        <div class="nav-msg">
+            <p> <span>Important Notice:</span> <br>
+                Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
+                and financial details to anyone online or anywhere else
+            </p>
+        </div>
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html">BinaryBank </a> </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li> <a href="index.html">Home </a> </li>
                 <li> <a href="sign_in.html">Sign In </a> </li>
                 <li> <a href="register.html">Sign Up </a> </li>
@@ -21,63 +29,147 @@
                 <li> <a href="contact_us.html">Contact Us</a> </li>    
             </ul>
         </nav>
-    </header>
+    </header> <br>
     <main>
-        <section>
-            <h1>Innovative Banking Products</h1>
-            <p>Designed for your personal and business needs</p>
-            <div>
-                <img src="images/Register_account.jpg" alt="Register Account" height="180" width="350">
-                <h2>Open An Account Instantly</h2>
-                <p>Need an account? Open an account for <br> your business, your child or yourself in minutes.</p>
-                <a href="register.html">Click here to start > </a>
+        <section class="landing-section">
+            <div class="background-image"></div>
+            <div class="landsec-content">
+                <h1>Secure Banking With Ease</h1>
+                <p>Experience the future of banking with our innovative digital solutions</p>
+                <button class="cta-button">Get Started</button>
             </div>
-            <div> <br>
-                <img src="images/Sign_in.jpg" alt="Sign In" height="180" width="350">
-                <h2>Already Have An Acoount?</h2>
-                <p>Login to your account and enjoy easy banking.</p>
-                <a href="sign_in.html">Login > </a>
-            </div> <br>
-            <div>
-                <img src="images/Need_help.jpg" alt="Need Help?" height="180" width="350">
-                <h2>Need Help?</h2>
-                <p>Contact us and get all the answers you need from your phone.</p>
-                <a href="contact_us.html">Contact Us > </a>
-            </div> <br>
         </section>
-        <section>
-            <div>
-                <h4>Personal</h4>
-                <ul>
-                    <li>Savings Account</li>
-                    <li>Current Account</li>
-                    <li>Cards</li>
-                    <li>Loans</li>
-                </ul>
+        <section class="first-section"> 
+            <h1 id="bank-opt">Innovative Banking Products</h1>
+            <p id="bank-opt-description">Designed for your personal and business needs</p>
+            <section class="container">
+                <div class="box">
+                    <img src="images/Register_account.jpg" alt="Register Account"  class="box-img">
+                    <h2 class="box-header">Open An Account Instantly</h2>
+                    <p class="box-msg">Need an account? Open an account for  your business, your child or yourself in minutes.</p> <br>
+                    <a href="register.html" class="box-link">Click here to start > </a>
+                </div>
+                <div class="box"> 
+                    <img src="images/Sign_in.jpg" alt="Sign In"  class="box-img">
+                    <h2 class="box-header">Already Have An Acoount?</h2>
+                    <p class="box-msg">Login to your account and enjoy easy banking.</p> <br> <br>
+                    <a href="sign_in.html" class="box-link">Login > </a>
+                </div> 
+                <div class="box">
+                    <img src="images/Need_help.jpg" alt="Need Help?" class="box-img">
+                    <h2 class="box-header">Need Help?</h2>
+                    <p class="box-msg">Contact us and get all the answers you need from your phone.</p> <br> <br>
+                    <a href="contact_us.html" class="box-link">Contact Us > </a>
+                </div>
+            </section> 
+        </section>
+        <section class="about">
+            <h2>About Us</h2>
+            <div class="container">                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>BinaryBank has been serving customers for over 25 years, providing innovative financial solutions and exceptional service. We combine traditional banking values with cutting-edge technology.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stats-item">
+                            <h3>25+</h3>
+                            <p>Years of Experience</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>1M+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stats-item">
+                            <h3>500+</h3>
+                            <p>Branches</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4>Business</h4>
-                <ul>
-                    <li>Business Banking</li>
-                    <li>e-Banking Services</li>
-                    <li>Cards</li>
-                    <li>Loans and Advances</li>
-                </ul>
+        </section>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="services-intro">
+                <div class="intro-item">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Personal Banking</h3>
+                    <p>Tailored solutions for your personal financial needs</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Banking</h3>
+                    <p>Bank anywhere, anytime with our secure app</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-building"></i>
+                    <h3>Business Banking</h3>
+                    <p>Comprehensive services for your business growth</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Investments</h3>
+                    <p>Expert guidance for your investment portfolio</p>
+                </div>
+
             </div>
-            <div>
-                <h4>Help & Security</h4>
-                <ul>
-                    <li>Account Reactivation</li>
-                    <li>Complaints & Enquiries</li>
-                    <li>Self Service</li>
-                    <li>Security Center</li>
-                </ul>
-            </div>
+
+        </section>
+        <section class="info-section">
+            <section class="container">
+                <div class="info-section-content">
+                    <h4>Personal</h4>
+                    <ul>
+                        <li>Savings Account</li>
+                        <li>Current Account</li>
+                        <li>Cards</li>
+                        <li>Loans</li>
+                        <li>Compare Account</li>
+                        <li>Way to Bank</li>
+                        <li>Private Banking</li>
+                    </ul>
+                </div>
+                <div class="info-section-content">
+                    <h4>Business</h4>
+                    <ul>
+                        <li>Business Banking</li>
+                        <li>e-Banking Services</li>
+                        <li>Cards</li>
+                        <li>Corporate Banking</li>
+                        <li>SME Banking</li>
+                        <li>Investor Relations</li>
+                        <li>Loans and Advances</li>
+                    </ul>
+                </div>
+                <div class="info-section-content">
+                    <h4>Help & Security</h4>
+                    <ul>
+                        <li>Account Reactivation</li>
+                        <li>Complaints & Enquiries</li>
+                        <li>Self Service</li>
+                        <li>Security Center</li>
+                        <li>Dispense Error</li>
+                        <li>Customer Feedback Survey</li>
+                        <li>Help Videos</li>
+                    </ul>
+                </div>
+                <div class="info-section-content">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>Find a Branch/ATM</li>
+                        <li>Financial Calculators</li>
+                        <li>iRefer</li>
+                        <li>Video Banking</li>
+                        <li>Currency Converter</li>
+                        <li>Foreign Account</li>
+                        <li>Internal Links</li>
+                    </ul>
+                </div>
+            </section>
         </section>
 
     </main>
     <footer>
-        <p>&copy;2024 Binary Bank Ltd. All Rights Reserved.</p>
+        <p>&copy; 2024 Binary Bank Ltd. All Rights Reserved.</p>
     </footer>
 </body>
 </html>

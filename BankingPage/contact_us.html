@@ -4,66 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h3>Important Notice:</h3>
-        <p>Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
-            and financial details to anyone online or anywhere else
-        </p>
-        <nav>
-            <ul>
+    <header class="navbar-msg">
+        <div class="nav-msg">
+            <p> <span>Important Notice:</span> <br>
+                Please be mindful of fake fraudulent sites posing as Binary Bank Ltd. Do not disclose your personal information
+                and financial details to anyone online or anywhere else
+            </p>
+        </div>
+        <nav class="navbar">
+            <div class="logo"> <a href="index.html">BinaryBank </a> </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li> <a href="index.html">Home </a> </li>
                 <li> <a href="sign_in.html">Sign In </a> </li>
                 <li> <a href="register.html">Sign Up </a> </li>
                 <li> <a href="transfer.html">Transfer </a> </li>
-                <li> <a href="transactions.html">Transaction History </a> </li> 
-                <li> <a href="contact_us.html">Contact Us</a> </li>   
+                <li> <a href="transactions.html">Transaction History </a> </li>
+                <li> <a href="contact_us.html">Contact Us</a> </li>    
             </ul>
         </nav>
-    </header>
+    </header> <br>
     <main>
-        <section>
-            <h2>Help Center</h2>
-            <h3>We're Here To Help</h3>
-            <p>This is your first stop whenever you need assistance using our products and services, 
-                even the simplest banking operations.
-            </p>
-            <img src="images/help_center.jpg" alt="Help Centre" height="250" width="500">
+        <section class="help-center">
+            <div class="help-center-container">
+                <div class="help-msg-container">
+                    <h2>Help Center</h2>
+                    <h3>We're Here To Help</h3>
+                    <p>This is your first stop whenever you need assistance using our products and services, 
+                        even the simplest banking operations.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Account Services</h2>
-            <p>Find information about our account services topics here.</p>
-            <h3>FAQs</h3>
-            <ol>
-                <li> <a href="#">How to open an account</a> </li>
-                <li> <a href="#">How to generate your account statement</a> </li>
-                <li> <a href="#">How to liquidate loan</a> </li>
-                <li> <a href="#">How to link your BVN to your account</a> </li>
-                <li> <a href="#">How to check your account balance</a> </li>
-                <li> <a href="#">How to freeze and unfreeze your bank card</a> </li>
-                <li> <a href="#">How to resolve transfer issues or ATM dispense error</a> </li>
-            </ol>
+        <section class="help-services">.
+            <div class="help-services-header">
+                <h2>Account Services</h2>
+                <p>Find information about our account services topics here.</p>
+                <h3>FAQs</h3>
+            </div>
+            <div class="faqs-list">
+                <ol>
+                    <li id="first-li"> <a href="#">How to open an account  ></a> </li>
+                    <li> <a href="#">How to generate your account statement  ></a> </li>
+                    <li> <a href="#">How to liquidate loan  ></a> </li>
+                    <li> <a href="#">How to link your BVN to your account  ></a> </li>
+                    <li> <a href="#">How to check your account balance  ></a> </li>
+                    <li> <a href="#">How to freeze and unfreeze your bank card  ></a> </li>
+                    <li> <a href="#">How to resolve transfer issues or ATM dispense error  ></a> </li>
+                </ol>
+            </div>
         </section>
-        <section>
-            <h2>Still not satisfied with the FAQs?</h2>
-            <p>You can send us a message using the complaints and enquiries form below.</p>
-            <form >
-                <label for="name">Full Name: </label>
-                <input type="text" name="name" id=""> <br> <br>
-                <label for="email">Email: </label>
-                <input type="email" name="email" id=""> <br> <br>
-                <label for="message">Message: </label>
-                <textarea name="message" id=""> </textarea> <br> <br>
-                <button type="submit">Send Message</button>
-            </form>
+        <section class="enquiries">
+            <div class="enquiries-header">
+                <h2>Still not satisfied with the FAQs?</h2>
+                <p>You can send us a message using the complaints and enquiries form below.</p>
+            </div>
+            <div class="contact-enquiries-container">
+                <div class="grid-item">
+                    <form class="enquiries-form">
+                        <div>
+                            <label for="name">Full Name: </label>
+                            <input type="text" name="name" id="">
+                        </div> 
+                        <div>
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="">
+                        </div> 
+                        <div>
+                            <label for="message">Message: </label>
+                            <textarea name="message" id=""> </textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="cta-button" id="enquiries-form-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="grid-item" id="contact-details">
+                    <div>
+                        <i class="fa-solid fa-address-book"> </i>
+                    </div>
+                    <div>
+                        <h2>Our 24/7 Contact Details</h2>
+                        <p><b>Phone no:</b> 09066677888</p>
+                        <p><b>Email:</b> help@binarybank.com</p>
+                    </div>
+                    <div class="socials">
+                        <i class="fa-solid fa-bell"> </i>
+                        <i class="fa-solid fa-share-nodes"> </i>
+                        <i class="fa-solid fa-envelope"> </i>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <h2>Our 24/7 Contact Details</h2>
-            <p><b>Phone no:</b> 09066677888</p>
-            <p><b>Email:</b> help@binarybank.com</p>
-        </section>
-
+            
     </main>
     <footer>
         <p>&copy;2024 Binary Bank Ltd. All Rights Reserved.</p>
